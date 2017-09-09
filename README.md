@@ -1,4 +1,4 @@
-React Boilerplate
+Chat Application - React Boilerplate
 =====================
 
 A minimal and light dev environment for ReactJS.
