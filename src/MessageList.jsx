@@ -4,9 +4,11 @@ import Message from './Message.jsx';
 class MessageList extends Component {
     render() {
         console.log('Rendering <MessageList />');
+        let messages = this.props.messages.map((message) => <Message message={message} />);
+
         return (
             <main className="messages">
-                <Message />
+                {messages}
             </main>
         );
     }

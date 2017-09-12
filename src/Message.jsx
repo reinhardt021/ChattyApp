@@ -5,11 +5,11 @@ import SystemMessage from './SystemMessage.jsx';
 class Message extends Component {
     render() {
         console.log('Rendering <Message />');
-
-        // TODO: need condition to check type of message
-        var userMessage = true;
-
-        return (userMessage ? <UserMessage /> : <SystemMessage />);
+        return (
+            this.props.message.type === 'system' ?
+                <SystemMessage message={this.props.message} /> :
+                <UserMessage message={this.props.message} />
+        );
     }
 }
 
