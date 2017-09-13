@@ -58,6 +58,15 @@ class App extends Component {
     handleSubmit(event) {
         console.log('>>> an event was created for the submit of stuff: ', event);
         event.preventDefault();
+
+        // const newMessage = {
+        //     id: this.state.messages.length + 1, // TODO: update when backend implemented
+        //     type: 'user',
+        //     username: 'Michelle', // TODO: figure out how to get the username from subcomponent
+        //     content: 'Hello there!' // TODO: figure out how to get content from subcomponent
+        // };
+        // const messages = this.state.messages.concat(newMessage);
+        // this.setState({messages: messages});
     }
 
     render() {
