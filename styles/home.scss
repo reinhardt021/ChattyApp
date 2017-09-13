@@ -13,7 +13,7 @@ body {
   margin: 70px 0;
 }
 
-.chatbar {
+.chatbar, .chatbar > form{
   background: tomato;
   border-top: 1px solid black;
   bottom: 0;
@@ -27,7 +27,7 @@ body {
 .chatbar-message,
 .chatbar-username {
   border: 1px solid black;
-  display: block;
+  display: inline;
   height: 40px;
   line-height: 40px;
   margin: 5px;
